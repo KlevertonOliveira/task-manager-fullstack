@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins;
+  }
+}
+
+@layer utilities {
+  .task-wrapper {
+    @apply bg-white shadow-md rounded p-4 w-full flex justify-between;
+  }
+  .task-description {
+    @apply font-medium tracking-wider capitalize text-zinc-700;
+  }
+  .task-buttons {
+    @apply flex gap-3;
+  }
+  .task-buttons__edit-btn {
+    @apply text-green-600;
+  }
+  .task-buttons__remove-btn {
+    @apply text-red-600;
+  }
+
+  .task-header {
+    @apply flex items-center justify-center gap-2;
+  }
+
+  .task-completed {
+    @apply line-through;
+  }
+}

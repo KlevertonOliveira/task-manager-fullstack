@@ -1,0 +1,5 @@
+lsof -i tcp:3000
+kill -9 #process
+
+run the command to watch for style updates:
+npx tailwindcss -i ./frontend/styles/main.css -o ./frontend/dist/main.css --watch
